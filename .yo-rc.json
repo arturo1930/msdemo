@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "msdemo",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "3.1.0"
+      }
+    ],
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "no",
+    "clientTestFrameworks": null,
+    "clientTheme": null,
+    "creationTimestamp": 1719595028353,
+    "databaseType": "sql",
+    "devDatabaseType": null,
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "jhipsterVersion": "8.2.1",
+    "microfrontend": null,
+    "microfrontends": [],
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageName": "com.mycompany.myapp",
+    "prodDatabaseType": "mysql",
+    "serverPort": 8081,
+    "skipClient": true,
+    "skipCommitHook": true,
+    "withAdminUi": null
+  }
+}
