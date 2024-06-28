@@ -27,20 +27,6 @@ public class JHipsterPropertiesMock {
         Mockito.when(spyJHipsterProperties.info()).thenReturn(spyInfo);
         Mockito.when(spyJHipsterProperties.info().swagger()).thenReturn(spySwagger);
 
-        JHipsterProperties.Security spySecurity = Mockito.spy(jHipsterProperties.security());
-        JHipsterProperties.Security.Authentication spyAuthentication = Mockito.spy(jHipsterProperties.security().authentication());
-        JHipsterProperties.Security.Authentication.Jwt spyJwt = Mockito.spy(jHipsterProperties.security().authentication().jwt());
-        JHipsterProperties.Security.Authentication.Jwt.PrivateKey spyPrivateKey = Mockito.spy(
-            jHipsterProperties.security().authentication().jwt().privateKey()
-        );
-        Mockito.when(spyJHipsterProperties.security()).thenReturn(spySecurity);
-        Mockito.when(spyJHipsterProperties.security().authentication()).thenReturn(spyAuthentication);
-        Mockito.when(spyJHipsterProperties.security().authentication().jwt()).thenReturn(spyJwt);
-        Mockito.when(spyJHipsterProperties.security().authentication().jwt().privateKey()).thenReturn(spyPrivateKey);
-
-        JHipsterProperties.Mail spyMail = Mockito.spy(jHipsterProperties.mail());
-        Mockito.when(spyJHipsterProperties.mail()).thenReturn(spyMail);
-
         return spyJHipsterProperties;
     }
 }

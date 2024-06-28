@@ -33,6 +33,7 @@
     "java:war": "./mvnw -ntp verify -DskipTests --batch-mode -Pwar",
     "java:war:dev": "npm run java:war -- -Pdev,webapp",
     "java:war:prod": "npm run java:war -- -Pprod",
+    "prepare": "husky",
     "services:db:await": "sleep 10",
     "services:up": "docker compose -f src/main/docker/services.yml up --wait"
   },
@@ -42,7 +43,12 @@
     "packaging": "jar"
   },
   "devDependencies": {
-    "generator-jhipster": "8.2.1",
-    "generator-jhipster-quarkus": "3.1.0"
+    "generator-jhipster": "8.6.0",
+    "generator-jhipster-quarkus": "3.1.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.7",
+    "prettier": "3.3.2",
+    "prettier-plugin-java": "2.6.0",
+    "prettier-plugin-packagejson": "2.5.0"
   }
 }
