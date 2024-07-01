@@ -19,9 +19,10 @@
     "devDatabaseType": null,
     "enableHibernateCache": true,
     "enableTranslation": true,
-    "entities": [],
-    "jhipsterVersion": "8.6.0",
+    "entities": ["Product"],
+    "jhipsterVersion": "8.2.1",
     "languages": ["en"],
+    "lastLiquibaseTimestamp": 1719602832000,
     "microfrontend": null,
     "microfrontends": [],
     "nativeLanguage": "en",
@@ -29,6 +30,7 @@
     "prodDatabaseType": "mysql",
     "serverPort": 8081,
     "skipClient": true,
+    "skipUserManagement": true,
     "withAdminUi": null
   }
 }
